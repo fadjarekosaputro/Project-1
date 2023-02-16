@@ -1,0 +1,154 @@
+body {
+    font-family: 'Quicksand', Cambria, Cochin, Georgia, Times, 'Helvetica',sans-serif ;
+    background-color:gray;
+    text-align: justify;
+    overflow-x: show;
+ }
+ h2 {
+     color: #0a0a0a;
+     text-align: center;
+ }
+ h3 {
+     color:#0a0a0a;
+     text-align: center;
+ } 
+ header {
+   display: flex;
+   color: rgb(0, 0, 0);
+   letter-spacing: 1px;
+   align-items: center;
+}
+nav {
+   display: flex;
+   background-color: orange;
+   border: radius 5px ;
+   justify-content: space-between;
+   padding: 1px;
+   color: rgb(0, 0, 0);
+   position :static;
+   top: 0;
+   width: 100%;
+}
+nav ul {
+   display: flex;
+   list-style: none;
+   justify-content: space-between;
+   width: 20%;
+}
+nav ul li a {
+   color: black;
+   text-decoration: none;
+}
+nav ul li a:hover {
+   font-weight: bold;
+}
+.menu-toggle span {
+   display: block;
+   width: 25px;
+   height: 3px;
+   background-color: white;
+   border-radius: 5px;
+
+}
+.menu-toggle {
+   display: none;
+   flex-direction: column;
+   height: 28px;
+   justify-content: space-between;
+   position: relative;
+}
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+    padding: 30px;
+    margin-top: 40px;
+    background-color: whitesmoke;
+    text-indent: 2em;
+    box-sizing: border-box;
+ }
+ .foto {
+     border-radius: 100%;
+}
+.featured-image {
+   width: 100%;
+   max-height: 450px;
+   object-fit: cover;
+   object-position: justify;
+}
+ img {
+     border-radius: 10px;
+     margin: 10px;
+ }
+ article {
+     width: 60%;
+ }
+ aside {
+    width: 40%; 
+    padding-right: 10px;
+    text-align:justify ;
+ }
+
+footer {
+   padding: 5px;
+   background-color: rgb(255, 215, 0);
+   border-radius: 20px;  
+   color: whitesmoke;
+}
+.footer_left h3{
+   text-align: left;
+}
+footer a {
+   font-size: 18px;
+   text-decoration: none;
+   font-weight: 400;
+   color: black;
+}
+
+footer li {
+   list-style-type: none;
+   margin-right: 20px;
+   font-size: 10px;
+   text-decoration: none;
+   color: white;
+   display: inline;
+}
+.footer_center {
+   text-align: center;
+}
+main {
+   padding: 50px;
+   overflow: auto;
+}
+@media screen and (max-width :1000px) {
+   aside, article {
+      width: 100%;
+   }
+   .menu-toggle {
+      display: none;
+   }
+   nav ul {
+      display: flex;
+   }
+}
+@media screen and (max-width :768px) {
+   aside, article {
+      width: 100%;
+   }
+   .menu-toggle {
+      display: flex;
+   }
+   nav ul {
+      display: none;
+   }
+}
+@media screen and (max-width :576px) {
+   .aside, article {
+      width: 100%;
+   }
+   .menu-toggle {
+      display: flex;
+   }
+   nav ul {
+      display: none;
+   }  
+}
